@@ -11,6 +11,7 @@ def isPrime(n):
             return False
         i += 6
     return True
+
 for _ in range(int(input())):
     n = input()
     count = 0

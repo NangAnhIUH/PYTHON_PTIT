@@ -6,5 +6,3 @@ def isOk(number):
 
 for _ in range(int(input())):
     print("YES" if isOk(input()) else "NO")
-
-

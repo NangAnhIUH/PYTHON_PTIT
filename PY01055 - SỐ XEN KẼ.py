@@ -6,5 +6,6 @@ def isOk(number: str):
     if len(set(digit for digit in number[::2])) !=  1:
         return False
     return True
+
 for _ in range(int(input())):
     print("YES" if isOk(input()) else "NO")

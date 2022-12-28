@@ -7,7 +7,6 @@ def check(n):
             return False
     return True
 
-
 i = 2
 while i <= 888:
     if check(str(i)):
