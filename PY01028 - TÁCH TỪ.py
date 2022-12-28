@@ -1,1 +1,1 @@
-print(*list(input().split())    )
+print(*list(input().split()))
