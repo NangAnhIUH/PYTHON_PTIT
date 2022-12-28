@@ -29,6 +29,5 @@ def solve(n):
         print(" * ", key, "^", value, sep="", end=" ")
     print()
 
-
 for _ in range(int(input())):
    solve(int(input()))

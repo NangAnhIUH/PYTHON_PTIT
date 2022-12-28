@@ -8,7 +8,6 @@ def solve(n):
         loop += 1
     return -1
 
-
 for _ in range(int(input())):
     n = int(input())
     print(solve(n))

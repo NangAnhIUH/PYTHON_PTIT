@@ -9,4 +9,3 @@ for i in range(int(input())):
     n, a = input(),list(map(int, input().split()))
     a.sort(key=lambda x: (solve(x), x))
     print(*a, sep=" ")
-

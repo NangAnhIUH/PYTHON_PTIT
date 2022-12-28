@@ -1,7 +1,6 @@
 n = int(input())
 a, top, bot = [], 0, 0
 
-
 for _ in range(n):
     a.append(list(map(int, input().split())))
     for i in range(n-_-1):
