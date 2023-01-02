@@ -14,10 +14,10 @@ class Complex:
         return Complex(a, bi)
 
     def toSting(self):
-        if self.bi < 0:
-            return f"{self.a} - {abs(self.bi)}i"
-        else:
+        if self.bi >= 0:
             return f"{self.a} + {abs(self.bi)}i"
+        else:
+            return f"{self.a} - {abs(self.bi)}i"
 
 for _ in range(int(input())):
     a, bi, c, di = map(int, input().split())
