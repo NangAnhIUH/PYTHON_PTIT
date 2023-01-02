@@ -4,7 +4,6 @@ for _ in range(int(input())):
 
     for i in range(n):
         A.append(list(map(int, input().split())))
-
     for j in range(m):
         row = []
         for a in A:

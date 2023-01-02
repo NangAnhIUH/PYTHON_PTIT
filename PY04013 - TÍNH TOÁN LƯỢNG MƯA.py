@@ -19,9 +19,9 @@ class Tram:
     def tinhTrungBinh(self):
         self.trungBinh = self.luongmua / self.thoigian * 60
 
-    def tinhLuongMua(self):
+    def __str__(self):
         self.tinhTrungBinh()
-        print(f"T{self.ma:02} {self.ten} {self.trungBinh:.2f}")
+        return f"T{self.ma:02} {self.ten} {self.trungBinh:.2f}"
 
 def to_minute(hh_mm):
     hh, mm = map(int, hh_mm.split(":"))
@@ -40,4 +40,4 @@ for _ in range(int(input())):
     ds_Tram[ten].them(ten, thoigian, luongmua)
 
 for ten_tram in ds_Tram:
-    ds_Tram[ten_tram].tinhLuongMua()
+    print(ds_Tram[ten_tram])

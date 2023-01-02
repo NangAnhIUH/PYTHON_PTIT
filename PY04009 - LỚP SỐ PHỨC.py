@@ -13,7 +13,7 @@ class Complex:
         bi = self.a * z2.bi + self.bi * z2.a
         return Complex(a, bi)
 
-    def toSting(self):
+    def __str__(self):
         if self.bi >= 0:
             return f"{self.a} + {abs(self.bi)}i"
         else:
@@ -25,4 +25,4 @@ for _ in range(int(input())):
     B = Complex(c, di)
     C = A.cong(B).nhan(A)
     D = A.cong(B).nhan(A.cong(B))
-    print(C.toSting(), D.toSting(), sep=', ')
+    print(C, D, sep=', ')
