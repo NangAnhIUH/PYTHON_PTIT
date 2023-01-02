@@ -10,7 +10,7 @@ class SinhVien:
 
     def tinhTrungBinh(self):
         tong = 0
-        for i in range(len(self.diem)):
+        for i in range(10):
             if i <= 1:
                 tong += self.diem[i] * 2
             else:
@@ -36,6 +36,7 @@ for i in range(int(input())):
     ten = input()
     diem = [float(x) for x in input().split()]
     L.append(SinhVien(ten, diem))
+
 L.sort(key=lambda x: -x.trungBinh)
 for student in L:
     print(student)
