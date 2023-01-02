@@ -34,4 +34,3 @@ for i in range(0, int(input())):
 L.sort(key=lambda x: -x.thanhTien)
 for i in L:
     print(i)
-
