@@ -1,10 +1,9 @@
-A = []
+A, res = [], 0
 n, m = map(int, input().split())
 
 for i in range(n):
     A.extend(list(map(int, input().split())))
 
-res = 0
 for i in A:
     if i > 9 and str(i) == str(i)[::-1] and i > res:
         res = i
