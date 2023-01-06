@@ -16,8 +16,7 @@ n = input()
 D = {}
 for x in map(int, input().split()):
     D[x] = D.get(x)
-befor, after = 0, sum(D)
-A = list(D)
+befor, after, A = 0, sum(D), list(D)
 i = 0
 while i < len(D) - 1:
     befor += A[i]
